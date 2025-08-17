@@ -1,12 +1,12 @@
-Deploying a Machine Learning Model with FastAPI
-This repository provides a template for serving a machine learning model as a production-ready REST API using FastAPI. The project includes a simple Streamlit application as a client to demonstrate how to interact with the API. The primary focus is on creating a robust, scalable, and well-documented backend service for machine learning predictions.
+Machine Learning API with FastAPI and Streamlit Frontend
+This repository provides a template for deploying a machine learning model, featuring a FastAPI backend and a Streamlit frontend. The primary focus is on creating a robust, scalable API service for predictions, with an interactive web application for user interaction.
 
 Key Technologies
 FastAPI: A modern, high-performance web framework for building APIs with Python. It's used here to create a robust backend that serves the ML model, handles requests, and provides automatic, interactive documentation.
 
-Pydantic: Powers the data validation within FastAPI. It ensures that all incoming data conforms to the required schema before being processed, preventing common errors and improving API reliability.
+Streamlit: A simple framework for building and sharing data apps. In this project, it acts as the user-facing client that consumes the FastAPI service, providing a user-friendly interface.
 
-Streamlit: A simple framework for building and sharing data apps. In this project, it acts as a client that consumes the FastAPI service, providing a user-friendly interface for demonstration purposes.
+Pydantic: Powers the data validation within FastAPI. It ensures that all incoming data conforms to the required schema before being processed, preventing common errors and improving API reliability.
 
 Scikit-learn: The library used to train and export the machine learning model.
 
@@ -69,7 +69,7 @@ The user interface will be available in your browser, typically at http://localh
 Application Workflow
 The workflow is centered around the FastAPI service.
 
-A client (in this case, the Streamlit app) sends a POST request with user data in a JSON format to the /predict endpoint of the FastAPI server.
+A client (the Streamlit app) sends a POST request with user data in a JSON format to the /predict endpoint of the FastAPI server.
 
 The FastAPI application receives the request.
 
